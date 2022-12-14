@@ -3,9 +3,10 @@
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color:  #CBC3E3;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerFormController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color:  #CBC3E3;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ClientRecord">
    <children>
       <GridPane layoutX="24.0" layoutY="116.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="478.0" prefWidth="699.0" style="-fx-background-color: #CBC3E3;">
         <columnConstraints>
@@ -44,11 +45,11 @@
                   <Font name="Verdana" size="18.0" />
                </font>
             </Label>
-            <TextField fx:id="customerName" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <TextField fx:id="customerPhone" prefHeight="29.0" prefWidth="205.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-            <TextField fx:id="customerPostalCode" prefHeight="29.0" prefWidth="255.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-            <TextField fx:id="customerAddress" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <Label text="Customer ID">
+            <TextField fx:id="clientName" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="clientPhone" prefHeight="29.0" prefWidth="205.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="clientPostalCode" prefHeight="29.0" prefWidth="255.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="clientAddress" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label text="Client ID">
                <font>
                   <Font name="Verdana" size="18.0" />
                </font>
@@ -94,11 +95,18 @@
             <Font name="Verdana Bold" size="24.0" />
          </font>
       </Label>
-      <ListView prefHeight="200.0" prefWidth="200.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="130.0" />
+      <ListView prefHeight="200.0" prefWidth="300.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="130.0" />
       <Label text="Pets" AnchorPane.rightAnchor="340.0" AnchorPane.topAnchor="100.0">
          <font>
             <Font name="Verdana Bold" size="24.0" />
          </font>
       </Label>
+      <Button fx:id="addNewPetBtn" mnemonicParsing="false" text="Add New Pet" AnchorPane.rightAnchor="260.0" AnchorPane.topAnchor="340.0">
+      <font>
+         <Font name="Verdana" size="18.0" />
+      </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d589e8" height="340.0" opacity="0.07" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="340.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="80.0" />
+
    </children>
 </AnchorPane>
