@@ -54,8 +54,8 @@
                   <Font name="Verdana" size="18.0" />
                </font>
             </Label>
-            <ComboBox fx:id="contactComboBox" prefHeight="29.0" prefWidth="274.0" GridPane.columnIndex="1" />
-            <Label text="Contact">
+            <ComboBox fx:id="vetComboBox" prefHeight="29.0" prefWidth="274.0" GridPane.columnIndex="1" />
+            <Label text="Vet">
                <font>
                   <Font name="Verdana" size="18.0" />
                </font>
