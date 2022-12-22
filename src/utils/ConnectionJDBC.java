@@ -22,7 +22,7 @@ public abstract class ConnectionJDBC {
     /**
      * Name of database
      */
-    private static final String databaseName = "client_schedule";
+    private static final String databaseName = "vet_schedule";
     private static final String jdbcUrl = protocol + vendor + location + databaseName + "?connectionTimeZone=SERVER"; // LOCAL
     /**
      * Driver reference
