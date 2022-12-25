@@ -4,6 +4,9 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 
 /**C&P from Version 3 Software II file, to use as template
+ * 12/21/2022 updated string databaseName = 'vet_schedule' ONLY
+ */
+
 /**
  * Class that manages database connection
  */
