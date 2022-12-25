@@ -11,13 +11,18 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("../view/loginwindow.fxml"));
-        primaryStage.setTitle("Schoellkopf Vet Scheduler");
-        primaryStage.setScene(new Scene(root, 500, 275));
+        primaryStage.setTitle("Schoellkopf Family Vets");
+        primaryStage.setScene(new Scene(root, 1000, 600));
         primaryStage.show();
     }
 
 
     public static void main(String[] args) {
         launch(args);
+        /**12.25 @TODO
+         * ADDED FOR LATER USE
+        ConnectionJDBC.openConnection();
+    }
+         */
     }
 }
