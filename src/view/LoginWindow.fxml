@@ -17,7 +17,7 @@
           <RowConstraints maxHeight="201.0" minHeight="10.0" prefHeight="149.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button fx:id="loginBtn" mnemonicParsing="false" onAction="#onLoginBtnClicked" prefHeight="29.0" prefWidth="162.0" text="Log in" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <Button fx:id="loginBtn" mnemonicParsing="false" prefHeight="29.0" prefWidth="162.0" text="Log in" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <font>
                   <Font name="Verdana" size="18.0" />
                </font>
@@ -34,10 +34,8 @@
             </Label>
             <TextField fx:id="usernameTF" prefHeight="29.0" prefWidth="204.0" GridPane.columnIndex="1" />
             <TextField fx:id="passwordTF" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <Label fx:id="zoneIdLbl" ellipsisString="" prefHeight="35.0" prefWidth="210.0" text="**ZONE ID***" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.valignment="TOP">
-               <font>
-                  <Font name="Verdana" size="18.0" />
-               </font></Label>
+
+
          </children>
       </GridPane>
       <Label fx:id="headerLbl" layoutX="340.0" layoutY="106.0" text="Welcome to Scheduler  " textFill="#4b4a4b">
