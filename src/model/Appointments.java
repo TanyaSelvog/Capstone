@@ -3,23 +3,6 @@ package model;
 import java.time.LocalDateTime;
 import java.time.Month;
 
-public class Appointments {
-    private String apptVet;
-    private int apptID;
-    private String apptType;
-    private LocalDateTime startDate;
-    private LocalDateTime endDate;
-
-
-
-    package model;
-
-import jdk.jfr.Description;
-
-import java.sql.Timestamp;
-import java.time.LocalDateTime;
-import java.time.Month;
-
     /**
      * This class holds data for appointments.
      */
@@ -85,10 +68,7 @@ import java.time.Month;
          */
         private String endDateString;
 
-        /**
-         * Contact name
-         */
-        private Contact contactName;
+
 
         /**
          * Month object used for comparing month & times
