@@ -90,12 +90,11 @@ import java.time.Month;
          * @param apptType Appointment Type
          * @param customerID Appointment Customer ID
          * @param userID Appointment User ID
-         * @param contactID Appointment Contact ID
          * @param startDate Appointment Start
          * @param endDate Appointment End
          */
         public Appointments(int apptID, String apptTitle, String apptDescription, String apptLocation, String apptContact,
-                            String apptType, int customerID, int userID, int contactID, LocalDateTime startDate, LocalDateTime endDate) {
+                            String apptType, int customerID, int userID,  LocalDateTime startDate, LocalDateTime endDate) {
             this.apptID = apptID;
             this.apptTitle = apptTitle;
             this.apptDescription = apptDescription;
@@ -104,7 +103,6 @@ import java.time.Month;
             this.apptType = apptType;
             this.customerID = customerID;
             this.userID = userID;
-            this.contactID = contactID;
             this.startDate = startDate;
             this.endDate = endDate;
         }
