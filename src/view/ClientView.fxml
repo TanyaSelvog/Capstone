@@ -25,24 +25,23 @@
             <TableColumn fx:id="address" prefWidth="167.0" text="Address" />
             <TableColumn fx:id="postalCode" prefWidth="94.0" text="Postal Code" />
             <TableColumn fx:id="phone" prefWidth="110.0" text="Phone Number" />
-            <TableColumn fx:id="division" prefWidth="94.0" text="Division" />
-            <TableColumn fx:id="country" prefWidth="108.0" text="Country" />
+
 
         </columns>
       </TableView>
-      <Button fx:id="addNewBtn" layoutX="44.0" layoutY="509.0" mnemonicParsing="false" onAction="#onAddNewCustomer" prefHeight="35.0" prefWidth="220.0" text="Add New Client">
+      <Button fx:id="addNewBtn" layoutX="44.0" layoutY="509.0" mnemonicParsing="false" onAction="#onAddNewClient" prefHeight="35.0" prefWidth="220.0" text="Add New Client">
          <font>
             <Font name="Verdana" size="18.0" />
          </font></Button>
-      <Button fx:id="modifyBtn" layoutX="298.0" layoutY="509.0" mnemonicParsing="false" onAction="#onModifyCurrent" prefHeight="35.0" prefWidth="262.0" text="Modify Current Client">
+      <Button fx:id="modifyBtn" layoutX="298.0" layoutY="509.0" mnemonicParsing="false" onAction="#onModClient" prefHeight="35.0" prefWidth="262.0" text="Modify Current Client">
          <font>
             <Font name="Verdana" size="18.0" />
          </font></Button>
-      <Button fx:id="backBtn" layoutX="851.0" layoutY="509.0" mnemonicParsing="false" onAction="#onBackToMain" prefHeight="35.0" prefWidth="86.0" text="Home">
+      <Button fx:id="backBtn" layoutX="851.0" layoutY="509.0" mnemonicParsing="false" onAction="#onBack" prefHeight="35.0" prefWidth="86.0" text="Home">
          <font>
             <Font name="Verdana" size="18.0" />
          </font></Button>
-      <Button fx:id="deleteCustomerBtn" layoutX="595.0" layoutY="509.0" mnemonicParsing="false" onAction="#onDeleteClick" text="Delete Client">
+      <Button fx:id="deleteCustomerBtn" layoutX="595.0" layoutY="509.0" mnemonicParsing="false" onAction="#onDelete" text="Delete Client">
          <font>
             <Font name="Verdana" size="18.0" />
          </font>
