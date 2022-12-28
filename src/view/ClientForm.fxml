@@ -101,12 +101,21 @@
             <Font name="Verdana Bold" size="24.0" />
          </font>
       </Label>
-      <Button fx:id="addNewPetBtn" mnemonicParsing="false" text="Add New Pet" AnchorPane.rightAnchor="260.0" AnchorPane.topAnchor="340.0">
+      <Button fx:id="addNewPetBtn" mnemonicParsing="false" text="Add Pet" AnchorPane.rightAnchor="300.0" AnchorPane.topAnchor="340.0">
       <font>
          <Font name="Verdana" size="18.0" />
       </font>
       </Button>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d589e8" height="340.0" opacity="0.07" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="340.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="80.0" />
-
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d589e8" height="340.0" layoutX="558.0" layoutY="87.0" opacity="0.07" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="373.0" AnchorPane.rightAnchor="57.0" AnchorPane.topAnchor="87.0" />
+      <Button layoutX="809.0" layoutY="340.0" mnemonicParsing="false" text="Delete">
+         <font>
+            <Font name="Verdana" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="715.0" layoutY="340.0" mnemonicParsing="false" text="Modify">
+      <font>
+         <Font name="Verdana" size="18.0" />
+      </font>
+   </Button>
    </children>
 </AnchorPane>
