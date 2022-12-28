@@ -18,7 +18,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 import javafx.util.Callback;
 import model.Appointments;
-import model.Customer;
+
 import utils.ApptsDB;
 
 import java.net.URL;
@@ -365,7 +365,7 @@ public class ApptsController implements Initializable {
 
                 // must get access to the controller to make the screen
                 //so using the getController method
-                ModifyApptController controller = loader.getController();
+                ModifyAppointmentController controller = loader.getController();
                 controller.modAppointment(appointment);
 
                 //set the stage

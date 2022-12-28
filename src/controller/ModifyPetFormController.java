@@ -11,12 +11,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-import model.Country;
-import model.Customer;
-import model.Division;
-import utils.CountryDB;
-import utils.CustDB;
-import utils.DivisionsDB;
+
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -57,11 +52,7 @@ public class ModifyPetFormController implements Initializable {
     @FXML
     private ComboBox  countryComboBox;
 
-    /**
-     * Combobox for divisions
-     */
-    @FXML
-    private ComboBox<Division> divisionComboBox;
+
 
     /**
      * Textfield for customer ID
@@ -70,7 +61,7 @@ public class ModifyPetFormController implements Initializable {
     private TextField customerID;
 
 
-    public Customer customerModify = null;
+
 
 
     /**
@@ -79,8 +70,9 @@ public class ModifyPetFormController implements Initializable {
      * @param resourceBundle Used to localize the root object, or null if the root object was not localized.
      */
     @Override
-    public void initialize (URL url, ResourceBundle resourceBundle) {
 
+    public void initialize (URL url, ResourceBundle resourceBundle) {
+/**
         countryComboBox.setItems(CountryDB.getCountryList());
 
     }
@@ -89,7 +81,7 @@ public class ModifyPetFormController implements Initializable {
      * Event handler for when a country is selected
      * @param actionEvent Country selected from Combo Box
      * @throws Exception
-     */
+
     public void countrySelected(ActionEvent actionEvent) throws Exception {
         Country countrySelected = (Country) countryComboBox.getSelectionModel().getSelectedItem();
         System.out.println("countrySelected from countrySelected method: " + countrySelected);
@@ -99,7 +91,7 @@ public class ModifyPetFormController implements Initializable {
     /**
      * Method for setting the customer to be modified
      * @param customer
-     */
+
     public void modCustomer(Customer customer){
 
         Division division = DivisionsDB.getCustomerDivision(customer.getDivisionID());
@@ -119,7 +111,7 @@ public class ModifyPetFormController implements Initializable {
     /**
      * Method for validating input fields and saving modified customer data to database
      * @return null
-     */
+
 
     public Customer getCustomerModification() {
         try{
@@ -155,7 +147,7 @@ public class ModifyPetFormController implements Initializable {
      * Event handler for Save button
      * @param actionEvent On click
      * @throws Exception
-     */
+
     public void onSaveBtn(ActionEvent actionEvent) throws Exception{
         Customer customer =  getCustomerModification();
         if (customer !=null){
@@ -172,7 +164,7 @@ public class ModifyPetFormController implements Initializable {
      * Event handler for Cancel button
      * @param actionEvent On click of Cancel button
      * @throws Exception
-     */
+
     public void onCancelBtn(ActionEvent actionEvent) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("/view/CustomersView.fxml"));
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
@@ -187,7 +179,7 @@ public class ModifyPetFormController implements Initializable {
      * Event handler for Home button
      * @param actionEvent On click of Home button
      * @throws Exception
-     */
+
     public void onHome(ActionEvent actionEvent) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("/view/HomePageWindow.fxml"));
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
@@ -197,4 +189,7 @@ public class ModifyPetFormController implements Initializable {
         stage.show();
     }
 
+}
+*/
+    }
 }

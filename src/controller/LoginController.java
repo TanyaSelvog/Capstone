@@ -83,7 +83,7 @@ public class LoginController implements Initializable {
     public static boolean apptTest;
 
 
-    private ResourceBundle rb = ResourceBundle.getBundle("Resources/Login", Locale.getDefault());
+ //   private ResourceBundle rb = ResourceBundle.getBundle("Resources/Login", Locale.getDefault());
 
     /**
      * Initializes the login controller and displays the zoneID
@@ -94,11 +94,10 @@ public class LoginController implements Initializable {
 
 
         Locale userLocale = Locale.getDefault();
-        zoneIdLbl.setText(ZoneId.systemDefault().toString());
-        ResourceBundle rb = ResourceBundle.getBundle("Resources/Login");
-        usernameLbl.setText(rb.getString("userNameLabel"));
-        passwordLbl.setText(rb.getString("passwordLabel"));
-        loginBtn.setText(rb.getString("loginButton"));
+
+   //     usernameLbl.setText(rb.getString("userNameLabel"));
+     //   passwordLbl.setText(rb.getString("passwordLabel"));
+       // loginBtn.setText(rb.getString("loginButton"));
 
     }
 
@@ -139,7 +138,7 @@ public class LoginController implements Initializable {
      * @throws Exception
      */
     public void onLoginBtnClicked(ActionEvent actionEvent) throws Exception {
-        if (userLogin() != true) {
+  /**      if (userLogin() != true) {
             returnLoginWindow(actionEvent);
             invalidUser();
         } else {
@@ -150,7 +149,8 @@ public class LoginController implements Initializable {
                 Alert msg = new Alert(Alert.AlertType.INFORMATION, ("You have no appointments in the next 15 minutes."));
                 msg.setTitle("No appointments");
                 msg.showAndWait();}}
-
+*/
+  System.out.println("Login button clicked");
         Parent root = FXMLLoader.load(getClass().getResource("/view/HomepageWindow.fxml"));
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         stage.setTitle("Scheduler Homepage");

@@ -12,12 +12,11 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
 import model.Appointments;
-import model.Contact;
-import model.Customer;
+
+
 import model.User;
 import utils.ApptsDB;
-import utils.ContactDB;
-import utils.CustDB;
+
 import utils.UserDB;
 
 import java.net.URL;
@@ -30,7 +29,7 @@ import static utils.ApptsDB.getCustomerAppts;
 /**
  * Controller class for Modify Appointment
  */
-public class ModifyApptController implements Initializable {
+public class ModifyAppointmentController implements Initializable {
     /**
      * Button for saving modified appointment details
      */
@@ -43,11 +42,7 @@ public class ModifyApptController implements Initializable {
     @FXML
     public Button cancelBtn;
 
-    /**
-     * Combobox with list of contacts
-     */
-    @FXML
-    public ComboBox <Contact>contactComboBox;
+
 
     /**
      * TextField for appointment title
@@ -143,6 +138,7 @@ public class ModifyApptController implements Initializable {
      * @throws Exception
      */
     public void onSaveClick(ActionEvent actionEvent) throws Exception {
+    /**
         try {
 
             Customer customerSelected = (Customer) customerComboBox.getSelectionModel().getSelectedItem();
@@ -200,6 +196,7 @@ public class ModifyApptController implements Initializable {
             Alert alert = new Alert(Alert.AlertType.ERROR, ("Data is missing or contains invalid values."));
             alert.showAndWait();
         }
+     */
     }
 
 
@@ -238,10 +235,10 @@ public class ModifyApptController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        contactComboBox.setItems(ContactDB.getContactList());
+      //  contactComboBox.setItems(ContactDB.getContactList());
         startTimeCB.setItems(getTimeList());
         endTimeCB.setItems(getTimeList());
-        customerComboBox.setItems(CustDB.getCustomersList());
+        //customerComboBox.setItems(CustDB.getCustomersList());
         typeComboBox.getItems().addAll("Initial Meeting", "Follow-Up Consultation", "Lunch Meeting", "Closing Session");
 
     }
@@ -253,8 +250,8 @@ public class ModifyApptController implements Initializable {
 
     public void modAppointment(Appointments appointment){
 
-        contactComboBox.getSelectionModel().select(ContactDB.getCustomerContact(appointment.getContactID()));
-        customerComboBox.getSelectionModel().select(CustDB.getCustomerName(appointment.getCustomerID()));
+     //   contactComboBox.getSelectionModel().select(ContactDB.getCustomerContact(appointment.getContactID()));
+       // customerComboBox.getSelectionModel().select(CustDB.getCustomerName(appointment.getCustomerID()));
 
 
         titleTF.setText(appointment.getApptTitle());

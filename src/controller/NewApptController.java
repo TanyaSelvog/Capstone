@@ -59,11 +59,7 @@ public class NewApptController implements Initializable {
     @FXML
     public Button cancelBtn;
 
-    /**
-     * Combobox for contacts
-     */
-    @FXML
-    public ComboBox<Contact> contactComboBox;
+
 
     /**
      * Combobox for appointment types
@@ -83,11 +79,6 @@ public class NewApptController implements Initializable {
     @FXML
     public ComboBox<String> endTimeCB;
 
-    /**
-     * Combobox for customers
-     */
-    @FXML
-    public ComboBox<Customer> customerComboBox;
 
     /**
      * Date picker for start date for new appointment
@@ -122,8 +113,8 @@ public class NewApptController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        contactComboBox.setItems(ContactDB.getContactList());
-        customerComboBox.setItems(CustDB.getCustomersList());
+    //    contactComboBox.setItems(ContactDB.getContactList());
+      //  customerComboBox.setItems(CustDB.getCustomersList());
         typeComboBox.getItems().addAll("Initial Meeting", "Follow-Up Consultation", "Lunch Meeting", "Closing Session");
 
 
@@ -195,7 +186,7 @@ public class NewApptController implements Initializable {
      */
     //working on 4.27
     public void onSave(ActionEvent actionEvent) throws Exception {
-        try {
+    /**    try {
             Customer customerSelected = customerComboBox.getSelectionModel().getSelectedItem();
             LocalDateTime startDateTime = getStartDateTime();
             LocalDateTime endDateTime = getEndDateTime();
@@ -253,7 +244,7 @@ public class NewApptController implements Initializable {
      * Event handler for Cancel button that returns user to Appointments View page
      * @param actionEvent Clicked Cancel button
      * @throws Exception
-     */
+
 
     public void onCancel(ActionEvent actionEvent) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("/view/AppointmentsView.fxml"));
@@ -270,7 +261,7 @@ public class NewApptController implements Initializable {
      * @param startDate startDate for appointment to be scheduled
      * @param endDate endDate for appointment to be scheduled
      * @return false, if any conflict
-     */
+
     private boolean getCustApptsCompare(int customerID, LocalDateTime startDate, LocalDateTime endDate) {
 
 // || start.isBefore(appointment.getStart()) && end.isAfter(appointment.getEnd())) {
@@ -291,5 +282,8 @@ public class NewApptController implements Initializable {
                 return false;
             }
         }return true;}
+}
+     */
+    }
 }
 

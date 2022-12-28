@@ -39,10 +39,10 @@ public class UserDB {
             ResultSet result = ps.executeQuery();
             result.next();
 
-            int id = result.getInt("User_ID");
-            String passwordDB= result.getString("Password");
+            int userID = result.getInt("userID");
+            String passwordDB= result.getString("password");
 
-            User user = new User(id, username, password);
+            User user = new User(userID, username, password);
 
             if (!passwordDB.equals(password)) {
                 Alert alert = new Alert(Alert.AlertType.ERROR);

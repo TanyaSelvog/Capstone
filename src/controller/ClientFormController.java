@@ -100,7 +100,7 @@ public class ClientFormController implements Initializable {
      */
 
     public void onSaveBtn(ActionEvent actionEvent) throws Exception {
-        String custName = customerName.getText();
+     /**   String custName = customerName.getText();
         String custAddress = customerAddress.getText();
 
         String customerPostal =customerPostalCode.getText();
@@ -125,7 +125,7 @@ public class ClientFormController implements Initializable {
             stage.setScene(scene);
         }
 
-
+*/
 
     }
 
@@ -152,4 +152,3 @@ public class ClientFormController implements Initializable {
 
 
 
-}

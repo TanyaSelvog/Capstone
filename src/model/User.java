@@ -2,14 +2,41 @@ package model;
 
 public class User {
 
-    private int id;
-    private String userName;
-    public int getId() {
-        return id;
+    private static int userID;
+    private static String userName;
+    private static String password;
+
+    public static User getCurrentUser() {
+        return currentUser;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public static void setCurrentUser(User currentUser) {
+        User.currentUser = currentUser;
+    }
+
+    public String getLastUpdatedBy() {
+        return lastUpdatedBy;
+    }
+
+    public void setLastUpdatedBy(String lastUpdatedBy) {
+        this.lastUpdatedBy = lastUpdatedBy;
+    }
+
+    private static User currentUser;
+    private String lastUpdatedBy;
+
+    public User(int userID, String userName, String password) {
+        this.userID= userID;
+        this.userName=userName;
+        this.password=password;
+    }
+
+    public static int getUserID() {
+        return userID;
+    }
+
+    public void setUserID(int userID) {
+        this.userID = userID;
     }
 
     public String getUserName() {
@@ -18,6 +45,13 @@ public class User {
 
     public void setUserName(String userName) {
         this.userName = userName;
+    }
+
+    public String getPassword(){
+        return password;
+    }
+    public void setPassword(String password){
+        this.password = password;
     }
 
 

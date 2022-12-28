@@ -144,14 +144,13 @@ import java.time.Month;
          * @param customerID
          * @param userID
          * @param contactID
-         * @param contactName
          * @param startDate
          * @param endDate
          * @param startDateString
          * @param endDateString
          */
         public Appointments(int apptID, String apptTitle, String apptDescription, String apptLocation, String apptContact,
-                            String apptType, int customerID, int userID, int contactID, Contact contactName, LocalDateTime startDate, LocalDateTime endDate, String startDateString, String endDateString) {
+                            String apptType, int customerID, int userID, int contactID, LocalDateTime startDate, LocalDateTime endDate, String startDateString, String endDateString) {
             this.apptID = apptID;
             this.apptTitle = apptTitle;
             this.apptDescription = apptDescription;
@@ -162,7 +161,7 @@ import java.time.Month;
             //    this.customerName = customerName;
             this.userID = userID;
             this.contactID = contactID;
-            this.contactName = contactName;
+
             this.startDate = startDate;
             this.endDate = endDate;
             this.startDateString = startDateString;
@@ -485,13 +484,7 @@ import java.time.Month;
             this.endDate = endDate;
         }
 
-        /**
-         * Getter for Contact Name
-         * @return Contact Name as Contact
-         */
-        public Contact getContactName() {
-            return contactName;
-        }
+
 
         /**
          * Setter for monthA
@@ -523,4 +516,4 @@ import java.time.Month;
         }
 
     }
-}
+
