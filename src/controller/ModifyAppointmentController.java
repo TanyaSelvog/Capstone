@@ -157,8 +157,8 @@ public class ModifyApptController implements Initializable {
             LocalTime endLT = LocalTime.parse(endTime, dtf);
             LocalDate endLD = endDateDP.getValue();
             LocalDateTime endDateTime = endLD.atTime(endLT);
-            String lastUpdatedBy = User.getUserName();
-            int userID = User.getUserID();
+           // String lastUpdatedBy = User.getUserName();
+         //   int userID = User.getUserID();
 
             String apptTitle = titleTF.getText();
             String apptDescription = descriptionTF.getText();
