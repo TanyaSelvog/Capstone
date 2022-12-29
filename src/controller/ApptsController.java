@@ -18,7 +18,6 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 import javafx.util.Callback;
 import model.Appointments;
-import model.Customer;
 import utils.ApptsDB;
 
 import java.net.URL;

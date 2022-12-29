@@ -100,13 +100,12 @@ public class ClientFormController implements Initializable {
      */
 
     public void onSaveBtn(ActionEvent actionEvent) throws Exception {
-        String custName = customerName.getText();
+  /**      String custName = customerName.getText();
         String custAddress = customerAddress.getText();
 
         String customerPostal =customerPostalCode.getText();
         String custPhone = customerPhone.getText();
-        Country countryName = (Country) countryComboBox.getValue();
-        Division division = (Division)divisionComboBox.getSelectionModel().getSelectedItem();
+
 
         if (custName.isEmpty() || custAddress.isEmpty() || custPhone.isEmpty() || countryName == null  || divisionComboBox == null ||
                 customerPostal.isEmpty()){
@@ -134,6 +133,7 @@ public class ClientFormController implements Initializable {
      * @param actionEvent Cancel button click
      * @throws Exception
      */
+    }
     public void onCancelBtn(ActionEvent actionEvent) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("/view/CustomersView.fxml"));
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
@@ -144,7 +144,14 @@ public class ClientFormController implements Initializable {
     }
 
 
-
+    public void onModifyPet(ActionEvent actionEvent) throws Exception{
+        Parent root = FXMLLoader.load(getClass().getResource("/view/ModifyPetForm.fxml"));
+        Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        stage.setTitle("All Customers");
+        Scene scene = new Scene(root, 1000, 600);
+        stage.setScene(scene);
+        stage.show();
+    }
 }
 
 
@@ -152,4 +159,4 @@ public class ClientFormController implements Initializable {
 
 
 
-}
+

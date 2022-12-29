@@ -112,7 +112,7 @@
             <Font name="Verdana" size="18.0" />
          </font>
       </Button>
-      <Button layoutX="715.0" layoutY="340.0" mnemonicParsing="false" text="Modify">
+      <Button layoutX="715.0" layoutY="340.0" mnemonicParsing="false"  onAction="#onModifyPet" text="Modify">
       <font>
          <Font name="Verdana" size="18.0" />
       </font>
